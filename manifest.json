@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ChessReviewMate",
+  "version": "1.0.0",
+  "description": "Structured chess game review sidebar for Lichess Study",
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/study/*"],
+      "js": ["dist/content.js"],
+      "css": ["dist/styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
